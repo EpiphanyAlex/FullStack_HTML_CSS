@@ -22,10 +22,10 @@
         which is used by screen readers to describe the navigation -->
             <ul class="nav-list">
             <!-- The ul tag is used to create an unordered list -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <!-- The li tag is used to create a list item 
                  and the li tag must be a child of the ul tag-->
                 <!-- The a tag is used to create a link to another page -->
@@ -38,7 +38,7 @@
             <h2>Welcome to Tech Gear</h2>
             <p>Your one-stop shop for all your tech needs</p>
         </section>
-        <section class="products" aria-label="Product list">
+        <section id="products" class="products" aria-label="Product list">
             <h2>Our Products</h2>
             <div class="product-grid">
                 <article class="card">
@@ -64,6 +64,30 @@
                 </article>
             </div>
         </section>
+        <section id="about" class="about" aria-label="About Tech Gear">
+            <h2>About Us</h2>
+            <p>We are passionate about creating innovative tech products that enhance your lifestyle.</p>
+        </section>
+        <section id="contact" class="contact" aria-label="Contact heading">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to work together? Send us a message below and we'll get back to you!</p>
+            <form class="contact-form" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <!-- label and input id must match -->
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
     </main>
+    <footer>
+        <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+    </footer>
 </body>
 </html>
