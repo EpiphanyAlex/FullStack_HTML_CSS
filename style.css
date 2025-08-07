@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; means the width and height of the element includes the padding and border */
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    /* color ratio*/
+    padding: 1rem;
+    /* 1rem is calculated according to the font size of the root element (html), and it is a relative unit */
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    /* text-align: center; is used to center the text in the header */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    /* display: flex; is used to display the list items in a row by default */
+    justify-content: center;
+    /* justify-content: center; is used to center the list items in the row */
+    list-style: none;
+    /* list-style: none; is used to remove the default list style */
+    gap: 1rem;
+    /* gap: 1rem; is used to add a gap between the list items */
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    /* text-decoration: none; is used to remove the default underline from the links */
+    font-weight: 600;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    outline-offset: 2px;
+    outline-color: #0077cc;
+    outline-style: solid;
+    /* Support accessibility, keep the focus visible */
+}
+
+.hero {
+    background-color: #e0eaff;
+    padding: 2rem 1rem;
+    /* 2rem is the padding on the top and bottom, 1rem is the padding on the left and right */
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    /* border-radius: 8px; is used to round the corners of the element */
+}
